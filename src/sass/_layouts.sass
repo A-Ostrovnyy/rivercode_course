@@ -1,0 +1,149 @@
+@media screen and (max-width: 975px)
+    body
+        font-size: 20px
+
+    .wrapper
+        padding-top: 0
+
+    .news
+        &_second
+            grid-template-columns: repeat(2, 1fr)
+
+        &_article
+            &-tags
+                width: 200px
+
+            &-social
+                width: 60px
+
+            &_social-link
+                width: 22px
+                height: 22px
+
+        &_hot
+            &-text
+                width: 100%
+
+    .article_img 
+        padding-bottom: 100%
+        padding-left: 100%
+
+    .content_head
+        flex-direction: column
+
+        &-label
+            width: 100%
+            text-align: center
+
+        &-text
+            padding: 5px
+            text-align: center
+            &::before
+                border: none
+
+    .comments::before
+        width: 24px
+        height: 18px
+        top: 2px
+
+    .header_terms,
+    .main_nav
+        display: none
+
+    .header
+        &_main
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+
+        &_hottest
+            display: none
+
+    .mobile_menu
+        padding: 15px 0
+        font-size: 1.2em
+        z-index: 4
+        display: block
+
+        & .header_terms,
+        & .main_nav
+            display: block
+            color: inherit
+
+    .hamburger_wraper 
+        display: inline-block
+        position: relative
+        top: 60px
+
+    .links > li
+        display: block
+        color: $dark
+
+@media screen and (max-width: 800px)
+    body
+        font-size: 28px
+
+    .header
+        &_hottest
+            text-align: center
+
+    .content
+        padding: 0
+
+    .news
+        &_second
+            grid-template-columns: repeat(1, 1fr)
+
+        &_hot
+            padding-bottom: 0
+            padding-right: 0
+            padding-left: 0
+
+            &-text
+                width: 100%
+
+        &_article
+            flex-direction: column
+
+            &-label
+                padding-bottom: 100%
+                margin-right: 0
+
+            &-additional
+                & > .comments
+                    margin-left: 50px
+
+            &-tags
+                display: none
+
+            &-social
+                width: 100%
+
+            &_social-link
+                width: 30px
+                height: 30px
+
+    main 
+        flex-direction: column
+
+    .hottest
+        &_video
+            &-aside
+                text-align-last: left
+
+            &-article
+                margin-bottom: 90px
+                text-align: center
+
+            &-img
+                width: 100%
+                padding-bottom: 100%
+
+            &-comments
+                margin-left: 50px
+
+    .comments::before
+        width: 30px
+        height: 24px
+        right: 35px
+        top: 6px
