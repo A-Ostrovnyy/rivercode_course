@@ -1,168 +1,22 @@
---- title: Index page --- 
+---
+title: Layman politics, blog about poloitics
+---
 {% extends "layouts/_layout.html" %}
+
 {% block content %}
-{% include "partials/_header.html" %}
-<main>
-	<div class="content">
-		<div class="content_head">
-			<a href="#" class="content_head-label">Gruesome video shoes syria brutality</a>
-			<p class="content_head-text">
-				As crackdowns against anti-government protesters continue across.
-			</p>
-		</div>
-		<div class="news_hot" style="background-image: url(./img/prime_news.jpg)">
-			<p class="news_hot-text">
-				The bloodied bodies lay stuffed and tanglad in the back of a pickup like garbage. Men lifted the bodies one by one and hurled
-				from them from a bridge into a river below as cursing filled the air.
-			</p>
-		</div>
-		<section class="news_second">
-			<article class="article">
-				<a href="#" class="article_img" style="background-image: url(./img/news_1.jpg)"></a>
-				<a href="#" class="article_head">CNN could not verify the authenticity</a>
-				<p class="article_text-preview">
-					The bloodied bodies lay stuffed and tanglad in the back of a pickup like garbage.
-				</p>
-				<span class="comments">12</span>
-			</article>
-			<article class="article">
-				<a href="#" class="article_img" style="background-image: url(./img/news_2.jpg)"></a>
-				<a href="#" class="article_head">How Much Do You Owe For Lunch? You Deside</a>
-				<p class="article_text-preview">
-					The bloodied bodies lay stuffed and tanglad in the back of a pickup like garbage.
-				</p>
-				<span class="comments">12</span>
-			</article>
-			<article class="article">
-				<a href="#" class="article_img" style="background-image: url(./img/news_3.jpg)"></a>
-				<a href="#" class="article_head">Reid eyes deal to end stalemate over funding</a>
-				<p class="article_text-preview">
-					The bloodied bodies lay stuffed and tanglad in the back of a pickup like garbage.
-				</p>
-				<span class="comments">12</span>
-			</article>
-			<article class="article">
-				<a href="#" class="article_img" style="background-image: url(./img/news_4.jpg)"></a>
-				<a href="#" class="article_head">Wall street on debt Deal so what?</a>
-				<p class="article_text-preview">
-					The bloodied bodies lay stuffed and tanglad in the back of a pickup like garbage.
-				</p>
-				<span class="comments">12</span>
-			</article>
-		</section>
-		<section class="news_top">
-			<article class="news_top-video">
-				<div class="content_head">
-					<a href="#" class="content_head-label">In syria 'brother of a whore' gets tossed like trash</a>
-					<p class="content_head-text">
-						As crackdowns against anti-government protesters.
-					</p>
-				</div>
-				<div class="news_article">
-					<a href="#" class="news_article-label" style="background-image: url(./img/news_5.jpg)"></a>
-					<div class="news_article-block">
-						<p class="news_article-text">
-							A federal judge in Ohio ruled Monday that former Rep. Dteve Driehaus' Defamation suit. In case that could test the bounds
-							of free speech? a former Democratic congressman has been allowed to proceed with his lawsuit against a prominent pro-life
-							group that he claims contributed to his election defeat by spreading falsehoods about his record on abortion issues.
-						</p>
-						<div class="news_article-additional">
-							<a href="#" class="comments">12</a>
-							<div class="news_article-tags">
-								<span class="news_article-tags-head">Tags:</span>
-								<a href="#" class="news_article_tag-link">Italy,</a>
-								<a href="#" class="news_article_tag-link">Best wine,</a>
-								<a href="#" class="news_article_tag-link">Spirit,</a>
-								<a href="#" class="news_article_tag-link">World championship,</a>
-								<a href="#" class="news_article_tag-link">Eat</a>
-							</div>
-							<div class="news_article-social">
-								<span class="news_article-tags-head">Share:</span>
-								<a href="#" class="news_article_social-link facebook"></a>
-								<a href="#" class="news_article_social-link twitter"></a>
-							</div>
-						</div>
-					</div>
+    {# partial example #}
+    {% include "partials/blocks/_header.html" %}
 
-				</div>
-			</article>
-			<article class="news_top-video">
-				<div class="content_head">
-					<a href="#" class="content_head-label">Gruesome video shoes syria brutality</a>
-					<p class="content_head-text">
-						As crackdowns against anti-government protesters continue across.
-					</p>
-				</div>
-				<div class="news_article">
-					<a href="#" class="news_article-label" style="background-image: url(./img/news_6.jpg)"></a>
-					<div class="news_article-block">
-						<p class="news_article-text">
-							In case that could test the bounds of free speech, a former Democratic congressman has been allowed to proceed withhislawsuit
-							agaginst a prominent pro-life group that he claims contributed to his election defeat by spreading falsehoods about
-							his record on abortion issues. A federal judje in Ohio ruled Monday that former Reo. Steve Driehaus' defamation suit.
-						</p>
-						<div class="news_article-additional">
-							<span class="comments">12</span>
-							<div class="news_article-tags">
-								<span class="news_article-tags-head">Tags:</span>
-								<a href="#" class="news_article_tag-link">Italy,</a>
-								<a href="#" class="news_article_tag-link">Best wine,</a>
-								<a href="#" class="news_article_tag-link">Spirit,</a>
-								<a href="#" class="news_article_tag-link">World championship,</a>
-								<a href="#" class="news_article_tag-link">Eat</a>
-							</div>
-							<div class="news_article-social">
-								<span class="news_article-tags-head">Share:</span>
-								<a href="#" class="news_article_social-link facebook"></a>
-								<a href="#" class="news_article_social-link twitter"></a>
-							</div>
-						</div>
-					</div>
+    <main class="content">
+        <div class="content__promo">
+            {% include "partials/blocks/_hero.html" %}
 
-				</div>
-			</article>
-		</section>
-	</div>
-	<aside class="hottest_video">
-		<a href="#" class="hottest_video-head content_head-label">
-			hottest video
-		</a>
-		<article class="hottest_video-article">
-			<a href="#" class="hottest_video-img" style="background-image: url(./img/aside_news_1.jpg)">
-				<div class="hottest_video_sign"></div>
-			</a>
-			<a href="#" class="hottest_video-aside">
-				CNN could not verify the authenticity
-			</a>
-			<p class="hottest_video-text">
-				The bloodied bodies lay stuffed and tangled in the back of a pickup like garbage.
-				<span class="comments hottest_video-comments">12</span>
-			</p>
-		</article>
-		<article class="hottest_video-article">
-			<a href="#" class="hottest_video-img" style="background-image: url(./img/aside_news_2.jpg)">
-				<div class="hottest_video_sign"></div>
-			</a>
-			<a href="#" class="hottest_video-aside">
-				Reids eyes deal to end stalemate over funding
-			</a>
-			<p class="hottest_video-text">
-				The bloodied bodies lay stuffed and tangled in the back of a pickup like garbage.
-				<span class="comments hottest_video-comments">12</span>
-			</p>
-		</article>
-		<article class="hottest_video-article">
-			<a href="#" class="hottest_video-img" style="background-image: url(./img/aside_news_3.jpg)">
-				<div class="hottest_video_sign"></div>
-			</a>
-			<a href="#" class="hottest_video-aside">
-				CNN could not verify the authenticity
-			</a>
-			<p class="hottest_video-text">
-				The bloodied bodies lay stuffed and tangled in the back of a pickup like garbage.
-				<span class="comments hottest_video-comments">12</span>
-			</p>
-		</article>
-	</aside>
-</main>
+            {% include "partials/blocks/_news.html" %}
+
+            {% include "partials/blocks/_articles.html" %}
+        </div>
+
+        {% include "partials/blocks/_aside.html" %}
+    </main>
+
 {% endblock %}

@@ -1,0 +1,100 @@
+.header,
+.top__label
+    font-family: $barlow
+    text-transform: uppercase
+
+.navigations
+    font-family: inherit
+
+    &__top
+        color: $nav_top
+        font-size: $font14
+
+        +r(800)
+            font-size: $font30
+
+        +r(900)
+            margin-bottom: 40px
+
+    &__main
+        font-family: inherit
+        color: $main_nav
+        font-size: $font18
+
+        +r(800)
+            font-size: $font44
+
+.news
+    &__text
+        font-size: $font11
+        font-style: italic
+        color: $text
+        line-height: $font18
+
+        +r(800)
+            font-size: $font27
+            line-height: $font36
+
+        &--link
+            text-decoration: none
+            text-transform: none
+
+            &:hover
+                text-decoration: underline
+                color: darken($text, 50%)
+
+            &:active
+                color: $red
+
+    &__head
+        color: $dark
+        text-decoration: underline
+        line-height: 1.5em
+
+        &:hover
+            text-decoration: none
+
+        &:active
+            color: $red
+
+.head
+    &__title
+        font-size: $font18
+        font-family: $barlow
+        text-transform: uppercase
+        text-decoration: none
+        color: $main_nav
+
+        +r(800)
+            font-size: $font44
+
+        &:hover
+            text-decoration: underline
+
+    &--radius
+        border-top-left-radius: 3px
+        border-bottom-left-radius: 3px
+
+    &__text
+        color: $text
+        width: 100%
+
+.tags
+    &__head
+        color: $tag_head
+
+    &__link
+        color: $tag
+        font-style: italic
+
+        &:hover
+            text-decoration: none
+            color: $hero-bg
+            transition: .3s color ease-in
+
+        &:active
+            color: $red
+
+.social__head
+    color: $tag_head
+

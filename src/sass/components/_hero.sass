@@ -1,0 +1,71 @@
+.head
+    border-radius: $radius
+    margin-bottom: 5px
+    width: 100% 
+    display: flex
+    flex-direction: row
+    align-items: center
+    background-color: $head-text
+
+    +r(975)
+        flex-direction: column
+
+    &__title
+        background-color: $red
+        white-space: nowrap
+        padding: 5px 40px 10px 10px
+
+        +r(975)
+            width: 100%
+            text-align: left
+            white-space: normal
+
+        +r(600)
+            white-space: normal
+
+    &__text
+        padding-left: 30px
+
+        +r(975)
+            padding: 10px 10px
+
+        &--arrow
+            position: relative
+
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: -11px
+            margin: 0
+            display: block
+            height: 100%
+            border: 18px solid transparent
+            border-left-color: $red
+
+            +r(975)
+                display: none
+
+.hero
+    padding: 110px 50px 40px 40px
+    border-radius: $radius
+    margin-bottom: 15px
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+
+    +r(800)
+        padding: 0
+        padding-top: 45%
+
+    &__text
+        background-color: $hero-bg
+        color: $hero-text
+        width: 337px
+        padding: 20px 25px 30px 15px
+        text-align: justify
+
+        +r(800)
+            width: 100%
+            padding: 20px
+            margin-bottom: 30px

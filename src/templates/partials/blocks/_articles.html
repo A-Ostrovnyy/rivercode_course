@@ -1,0 +1,52 @@
+<section class="news_top-video">
+
+    {% import "data/articles.html" as articles %}
+
+    {% for item in articles.articles %}
+
+    <article class="article">
+        <div class="head head--radius">
+            <a href="#" class="head__title">
+                {{item.title}}
+            </a>
+            <p class="head__text head__text--arrow">
+                {{item.description}}
+            </p>
+        </div>
+
+        <div class="article__wrapper">
+            <a href="#" class="article__img" style="background-image: url({{item.img}})"></a>
+            <div class="article-block">
+                <p class="news__text news__text--gutter">
+                    {{item.text}}
+                </p>
+                <div class="article__additional">
+                    <span class="comments comments--article">
+                        {{item.comments}}
+                    </span>
+                    <div class="tags">
+                        <span class="tags__head">Tags:</span>
+
+                        {% import "data/tags.html" as tags %} 
+
+                        {% for item in tags.tag %}
+
+                            <a href="#" class="tags__link">
+                                {{item.tag}}
+                            </a>
+                            
+                        {% endfor %}
+
+                    </div>
+                    <div class="social">
+                        <span class="social__head">Share:</span>
+                        <a href="#" class="social__link facebook"></a>
+                        <a href="#" class="social__link twitter"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+    {% endfor %}
+</section>

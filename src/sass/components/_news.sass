@@ -1,0 +1,62 @@
+.news
+    &__item
+        background-color: $white
+        padding: 15px
+        border-radius: $radius
+        box-shadow: 1px 1px 1px 1px rgba(#000, .14)
+        will-change: box-shadow
+
+        &:hover
+            box-shadow: 1px 1px 5px 5px rgba(#000, .14)
+            transition: .3s box-shadow ease-in-out
+
+    &__img
+        display: block
+        width: auto
+        min-height: 120px
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        margin-bottom: 12px
+
+        +r(975)
+            width: 100%
+            padding-bottom: 100%
+
+    &__text
+        margin-top: 10px
+
+.comments
+    font-style: italic
+    font-size: $font11
+    text-decoration: none
+    color: $grey
+    text-align: right
+    display: block
+    position: relative
+    cursor: pointer
+
+    +r(800)
+        font-size: $font27
+
+    &:hover
+        text-decoration: underline
+
+    &:active
+        color: $red
+
+    &::before
+        content: ''
+        display: block
+        width: 17px
+        height: 13px
+        background-image: url(../img/comments.png)
+        background-repeat: no-repeat
+        background-size: cover
+        position: absolute
+        right: 20px
+
+        +r(800)
+            width: 33px
+            height: 25px
+            right: 30px

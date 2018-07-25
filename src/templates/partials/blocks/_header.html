@@ -1,0 +1,68 @@
+<header>
+    <div class="top">
+        <span class="top__label">
+            hotest
+        </span>
+        <a href="#" class="news__text news__text--link">
+            The bloodied bodies lay stuffed and tangled in the back of a pick up like garbage.
+        </a>
+    </div>
+    <div class="header">
+        <a href="./" class="logo">
+            <h1 class="visualy__hidden">Layman politics blog about politics</h1>
+        </a>
+        <div class="navigations">
+            <div class="navigations__top">
+                <ul class="list">
+                    {% import "data/top_menu.html" as links %}
+
+                    {% for item in links.title %}
+                        <li class="list__item list__item--ishover">
+                            <a href="#" class="list__link list__link--hover">{{item.title}}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <nav class="navigations__main">
+                <ul class="list">
+                    {% import "data/nav.html" as nav %}
+
+                    {% for items in nav.links %}
+                        <li class="list__item list__item--isactive">
+                            <a href="#" class="list__link">{{items.title}}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        <div class="hamburger__wraper js-btn menu-open">
+            <div class="hamburger__item"></div>
+        </div>
+    </div>
+    <div class="mobile__menu disabled">
+        <div class="mobile__links">
+            <div class="navigations__top">
+                <ul class="list">
+                    {% import "data/top_menu.html" as links %}
+
+                    {% for item in links.title %}
+                        <li class=" list__item list__item--mobile">
+                            <a href="#" class="list__link">{{item.title}}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <nav class="navigations__main">
+                <ul class="list">
+                    {% import "data/nav.html" as nav %}
+
+                    {% for items in nav.links %}
+                        <li class=" list__item list__item--mobile">
+                            <a href="#" class="list__link">{{items.title}}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

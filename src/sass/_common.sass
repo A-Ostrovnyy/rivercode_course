@@ -1,26 +1,39 @@
-*
-	box-sizing: border-box
-	&:before, &:after
-		box-sizing: border-box
-
-html, body
-	height: 100%
-	width: 100%
-
 body
-	font-size: 12px
-	min-width: 320px
-	position: relative
-	font-family: Georgia, 'Times New Roman', Times, serif
-	overflow-x: hidden
-	opacity: 1
-	padding: 0
-	margin: 0
+    font-size: $font12
+    min-width: 320px
+    position: relative
+    font-family: Georgia, 'Times New Roman', serif
+    background-color: $background-blue
+    overflow-x: hidden
+    opacity: 1
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
+    +r(800)
+        font-size: $font28
 
-.text-center
-	text-align: center
+.l-
+    &wrapper
+        margin: 0
+        padding: 0
+        padding-top: 35px
+        background-image: url(../img/bg.jpg)
+        background-repeat: no-repeat
+        background-position: top center
+        background-size: cover
+
+        +r(800)
+            padding: 0
+
+    &container
+        margin: 0 auto
+        max-width: 1000px
+        border-radius: $radius
+        background-color: $container
+
+.content
+    padding: 30px
+
+    &__promo
+        padding-right: 30px
+
+        +r(800)
+            padding-right: 0

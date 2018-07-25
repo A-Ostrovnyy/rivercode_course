@@ -1,8 +1,8 @@
 let btn = document.querySelector('.js-btn');
-let menu = document.querySelector('.mobile_menu');
-let main = document.querySelector('main');
+let menu = document.querySelector('.mobile__menu');
+let header = document.querySelector('header');
 let mobileWraper = document.createElement('div');
-main.appendChild(mobileWraper);
+header.appendChild(mobileWraper);
 
 function init() {
   btn.addEventListener('click', () => {
@@ -10,7 +10,7 @@ function init() {
     menu.classList.toggle('disabled');
     btn.classList.toggle('menu-close');
     btn.classList.toggle('menu-open');
-    mobileWraper.classList.toggle('mobile_wraper');
+    mobileWraper.classList.toggle('mobile__wraper');
         
   });
 }

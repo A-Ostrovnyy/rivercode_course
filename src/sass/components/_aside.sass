@@ -1,0 +1,60 @@
+.sidebar
+    min-width: 185px
+
+    &__img
+        display: block
+        width: auto
+        min-height: 175px
+        background-size: contain
+        background-repeat: no-repeat
+        margin-bottom: 10px
+        position: relative
+
+        &:hover > .sidebar__video
+            background-color: $red
+            transition: .2s background-color ease-in
+
+        +r(800)
+            width: 100%
+            padding-bottom: 100%
+
+    &__video
+        display: block
+        width: 36px
+        height: 36px
+        border-radius: $radius
+        background-color: $hero-bg
+        will-change: background-color
+        position: absolute
+        left: 10px
+        bottom: 20px
+        background-image: url(../img/video-play.png)
+        background-repeat: no-repeat
+        background-position: center center
+
+        +r(800)
+            width: 75px
+            height: 75px
+            background-size: contain
+            bottom: 60px
+
+.head__title--aside
+    display: block
+    width: 100%
+    margin-bottom: 5px
+    padding: 7px
+    padding-left: 10px
+    padding-bottom: 8px
+
+.news__text--aside
+    margin-bottom: 25px
+
+.comments
+    &--sidebar
+        display: inline-block
+        margin-left: 30px
+
+        &::before
+            position: absolute
+            top: 3px
+

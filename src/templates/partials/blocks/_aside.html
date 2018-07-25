@@ -1,0 +1,26 @@
+<aside class="sidebar">
+
+    <a href="#" class="head__title head__title--aside">
+        hottest video
+    </a>
+
+    {% import "data/aside.html" as articles %}
+
+    {% for item in articles.aside %}
+        <article class="sidebar__article">
+            <a href="#" class="sidebar__img" style="background-image: url({{item.img}})">
+                <div class="sidebar__video"></div>
+            </a>
+            <a href="#" class="news__head">
+                {{item.title}}
+            </a>
+            <p class="news__text news__text--aside">
+                {{item.text}}
+                <span class="comments comments--sidebar">
+                    {{item.comments}}
+                </span>
+            </p>
+        </article>
+    {% endfor %}
+
+</aside>

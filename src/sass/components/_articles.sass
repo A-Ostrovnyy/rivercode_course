@@ -1,0 +1,77 @@
+.article
+    &__wrapper,
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        margin-bottom: 30px
+
+        +r(800)
+            flex-direction: column
+
+    &__img
+        display: block
+        height: auto
+        min-width: 170px
+        margin-right: 25px
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        border-radius: $radius
+
+        +r(800)
+            width: 100%
+            padding-bottom: 100%
+
+    &__additional
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: baseline
+
+        +r(840)
+            justify-content: space-between
+
+.news
+    &__text--gutter
+        margin-bottom: 25px
+
+.tags
+    margin-bottom: 20px
+    margin-right: 15px
+
+    +r(1000)
+        width: 200px
+
+    +r(840)
+        display: none
+
+    &__head
+        margin-right: 10px
+
+.comments--article
+    margin-right: 20px
+    margin-left: 25px
+
+.social
+    &__head
+        margin-right: 5px
+
+    &__link
+        background-repeat: no-repeat
+        background-size: cover
+        width: 16px
+        height: 16px
+        display: inline-block
+        margin-right: 5px
+        position: relative
+        top: 3px
+
+        +r(800)
+            width: 30px
+            height: 30px
+
+.facebook
+    background-image: url(../img/facebook.png)
+
+.twitter
+    background-image: url(../img/twitter.png)
