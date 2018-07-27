@@ -1,6 +1,6 @@
 <section class="news_top-video">
 
-    {% import "data/articles.html" as articles %}
+    {% import "../../data/articles.html" as articles %}
 
     {% for item in articles.articles %}
 
@@ -27,7 +27,7 @@
                     <div class="tags">
                         <span class="tags__head">Tags:</span>
 
-                        {% import "data/tags.html" as tags %} 
+                        {% import "../../data/tags.html" as tags %} 
 
                         {% for item in tags.tag %}
 

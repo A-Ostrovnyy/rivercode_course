@@ -6,9 +6,8 @@ function build(cb) {
     runSequence(
         'clean',
         'sprite:svg',
-        'svgo',
         'sass',
-        'swig',
+        'nunjucks',
         'webpack',
         'copy',
         'list-pages',

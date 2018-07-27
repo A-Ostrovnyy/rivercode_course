@@ -14,7 +14,7 @@
         <div class="navigations">
             <div class="navigations__top">
                 <ul class="list">
-                    {% import "data/top_menu.html" as links %}
+                    {% import "../../data/top_menu.html" as links %}
 
                     {% for item in links.title %}
                         <li class="list__item list__item--ishover">
@@ -25,7 +25,7 @@
             </div>
             <nav class="navigations__main">
                 <ul class="list">
-                    {% import "data/nav.html" as nav %}
+                    {% import "../../data/nav.html" as nav %}
 
                     {% for items in nav.links %}
                         <li class="list__item list__item--isactive">
@@ -43,7 +43,7 @@
         <div class="mobile__links">
             <div class="navigations__top">
                 <ul class="list">
-                    {% import "data/top_menu.html" as links %}
+                    {% import "../../data/top_menu.html" as links %}
 
                     {% for item in links.title %}
                         <li class=" list__item list__item--mobile">
@@ -54,7 +54,7 @@
             </div>
             <nav class="navigations__main">
                 <ul class="list">
-                    {% import "data/nav.html" as nav %}
+                    {% import "../../data/nav.html" as nav %}
 
                     {% for items in nav.links %}
                         <li class=" list__item list__item--mobile">
